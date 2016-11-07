@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>html title</title>
+    <style type="text/css" media="screen">
+        table {
+            background-color: #FA5858;
+            empty-cells: hide;
+        }
+        td.cell {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+<table style="border: black 1px solid;">
+    <tr>
+        <td class="cell">Confirmation Link :</td>
+        <td class="cell"><a href="{{ confirmation_code }}"/> CLICK TO CONFIRM </a> </td>
+    </tr>
+    <tr>
+        <td class="cell">Hotel :</td>
+        <td class="cell">{{ hotel_name }}</td>
+    </tr>
+    <tr>
+        <td class="cell">Checkin :</td>
+        <td class="cell">{{ book_response.checkin }}</td>
+    </tr>
+    <tr>
+        <td class="cell">Checkout :</td>
+        <td class="cell">{{ book_response.checkout }}</td>
+    </tr>
+    <tr>
+        <td class="cell">Price :</td>
+        <td class="cell"> {{ book_response.price }}</td>
+    </tr>
+
+    <tr>
+        <td class="cell">Room Description :</td>
+        <td class="cell">{{ book_response.rooms.0.room_description }}</td>
+    </tr>
+    <tr>
+        <td class="cell">Meal Type:</td>
+        <td class="cell">{{ book_response.meal_type }}</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    {% load static %}
+
+    <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css'/>
+        <link href="{% static 'css/mycss.css' %}" rel='stylesheet' type='text/css'/>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords"
+          content="Book Your Travel Widget Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"/>
+    <!-- //end-smoth-scrolling -->
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <!--webfonts-->
+    <link href='//fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
+    <style>
+        .main {
+
+        }
+
+        .main .facts {
+            margin-top: 100px;
+
+            opacity: 0.8;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <div style="margin-right: 150px;">
+    <a href=" {% url 'main:mybookings' %}"  class="btn btn-primary" style="float:right">My Bookings</a>
+    </div>
+
+
+<div class="main">
+    <form method="GET" action="{% url 'main:hotels' %}">
+        <div class="facts">
+            <div class="booking-form">
+                <div class="online_reservation">
+                    <div class="b_room">
+                        <div class="booking_room">
+                            <div class="reservation">
+                                <ul>
+                                    <li class="span1_of_1 desti">
+                                        <h4>Choose your destination </h4>
+                                        <div class="section_dest">
+                                            <select name="destination_code">
+                                                {% for dst in destinations %}
+                                                    <option value="{{ dst.coral_code }}">{{ dst.name }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reservation">
+                                <ul>
+                                    <li class="span1_of_1">
+                                        <h5>Check in date </h5>
+                                        <div class="book_date">
+
+                                            <input class="date" id="datepicker" type="text" name="check_in_date"
+                                                   value="DD-MM-YY" onfocus="this.value = '';"
+                                                   onblur="if (this.value == '') {this.value = 'DD-MM-YY';}"
+                                                   required="">
+
+                                        </div>
+
+                                    </li>
+                                    <li class="span1_of_1 left">
+                                        <h5>Check out date </h5>
+                                        <div class="book_date">
+
+                                            <input class="date" id="datepicker1" type="text" name="check_out_date"
+                                                   value="DD-MM-YY" onfocus="this.value = '';"
+                                                   onblur="if (this.value == '') {this.value = 'DD-MM-YY';}"
+                                                   required="">
+
+                                        </div>
+                                    </li>
+                                    <div class="clear"></div>
+                                </ul>
+                                <div class="groups">
+                                    <div class="grid_4 columns">
+                                        <h5>Pax</h5>
+                                        <select class="custom-select" id="select-4" name="pax">
+                                            <option selected="selected">1</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="grid_5 columns">
+
+                                    </div>
+                                    <div class="grid_6 columns">
+
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <!---strat-date-piker---->
+                                <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}"/>
+                                <script src="{% static 'js/jquery-ui.js' %}"></script>
+                                <script>
+                                    $(function () {
+                                        $("#datepicker,#datepicker1").datepicker({"dateFormat": "yy-mm-dd"});
+                                    });
+                                </script>
+                                <!---/End-date-piker---->
+                            </div>
+
+                            <div class="date_btn">
+                                <form>
+                                    <input type="submit" value="Search">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </form>
+</div>
+<!--start-copyright-->
+<div class="copy-right">
+    <div class="wrap">
+        <p></p>
+    </div>
+
+</div>
+<!--//end-copyright-->
+</div>
+</body>
+</html>

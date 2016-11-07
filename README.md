@@ -1,0 +1,1 @@
+A customer interface using coral_client library.

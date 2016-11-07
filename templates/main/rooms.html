@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    {% load static %}
+    {% load my_template_tags %}
+    <title>Login</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="{% static 'css/mycss.css' %}" rel='stylesheet'>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+<body>
+<div class="container" style="padding-top: 30px;">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">{{ hotel_obj_name }}</div>
+
+        <!-- Table -->
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Room Description</th>
+                <th>Meal Type</th>
+                <th>Category</th>
+                <th>Room Type</th>
+                <th>Price</th>
+                <th>Select Room</th>
+
+
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in room_list %}
+            <tr>
+                <td>{{ item.rooms.0.room_description }}</td>
+                <td>{{ item.meal_type }}</td>
+                <td>{{ item.rooms.0.room_category }}</td>
+                <td>{{ item.rooms.0.room_type }}</td>
+                <td>{{ item.price|division }} {{ item.currency }}</td>
+                <td> <a href=" {% url 'main:room' product_code=item.code %}"  class="btn btn-danger" style="float:right">Next</a> </td>
+
+
+
+            </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+

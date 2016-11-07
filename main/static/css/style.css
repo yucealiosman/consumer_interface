@@ -1,0 +1,789 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/*--start-body--*/
+body{
+  background:url("../images/bg.jpg") no-repeat 0px 0px;
+  background-size:cover;
+  -o-background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  font-family: 'ABeeZee', sans-serif;
+  position:relative;
+
+}
+body h1 {
+  text-align: center;
+  font-size:3.5em;
+  color:#042B6D;
+      margin: 4em 0em 1em 0em;
+  font-family: 'Oleo Script', cursive;
+}
+input, button, select, textarea {
+    font-family:'ABeeZee', sans-serif!important;
+}
+.facts {
+    background: #5ba6e7;
+    padding: 2em 2em;
+}
+body a,form li,input[type="submit"]{
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+}
+.main {
+       width: 45%;
+    margin: 0 auto 1em;
+}
+.reservation ul li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+}
+/******** SAP ************/
+.sap_tabs{
+	clear:both;
+	font-style: normal;
+	font-family: 'Comfortaa', cursive;
+	position:relative;
+}
+.facts {
+	border: none;
+	    padding: 2em 4em;
+}
+.form-control {
+    height: 50px;
+    padding:10px 12px 10px 50px;
+}
+.book_date span {
+    top: 2.4em;
+    color: #999;
+    left:1em;
+	z-index: 9999;
+}
+.book_date form {
+    margin: -1em 0 0;
+}
+li.span1_of_3 a{
+        width: 100% !important;
+    color: #fff;
+    font-size: 14px;
+    padding:0.8em 2em;
+    outline: none;
+    border:none;
+    -webkit-appearance: none;
+    background: #f67d08;
+	font-family: 'ABeeZee', sans-serif;
+}
+.book_date input[type="text"]{
+        width: 71% !important;
+    color: #9F9F9F;
+    font-size: 14px;
+        padding: 7px 45px 7px 20px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+	line-height: 30px;
+	font-family: 'ABeeZee', sans-serif;
+	background: url(../images/date.png) no-repeat 95% center #ffffff;
+	    margin-top: 1em;
+	}
+	.reservation h5 {
+		 font-size: 1.2em;
+		color: #fff;
+			margin: 1.5em 0 1em 0;
+		text-align: left;
+		font-family: 'ABeeZee', sans-serif;
+		font-weight: 400;
+	}
+
+.desti {
+    float: none !important;
+    width: 100% !important;
+}
+li.span1_of_1 {
+    float: left;
+    width:45%;
+}
+li.span1_of_1.left {
+      margin-left:3.5em;
+}
+select {
+	border: none;
+    outline: none;
+    font-size:15px;
+    color: #777;
+    background: url(../images/arrow1.png) no-repeat 97% center #ffffff;
+    width: 98%;
+    padding: 11px 45px 12px 20px;
+    color: #777!important;
+    -webkit-appearance: none;
+	font-family: 'ABeeZee', sans-serif;
+}
+.reservation ul {
+    margin: 0;
+    padding: 0;
+}
+#select-4 {
+	border:none;
+	outline:none;
+	font-size:13px;
+	color: #777;
+		background: url(../images/arrow1.png) no-repeat 93% center #ffffff;
+	width:100%;
+	margin: 0px 0px 5px 0px;
+	    padding: 12px 8px;
+	    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    -webkit-appearance: none;
+	font-family: 'ABeeZee', sans-serif;
+}
+#select-5 {
+	border:none;
+	outline:none;
+	font-size:13px;
+	color: #777;
+	 background: url(../images/arrow1.png) no-repeat 93% center #ffffff;
+	width:100%;
+	margin: 0px 0px 5px 0px;
+	    padding: 12px 8px;
+	    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    -webkit-appearance: none;
+	font-family: 'ABeeZee', sans-serif;
+}
+#select-6{
+	border:none;
+	outline:none;
+	font-size:13px;
+	color: #777;
+	 background: url(../images/arrow1.png) no-repeat 93% center #ffffff;
+	width:100%;
+	margin: 0px 0px 5px 0px;
+	    padding: 12px 8px;
+	    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    -webkit-appearance: none;
+	font-family: 'ABeeZee', sans-serif;
+}
+.grid_4{
+	float:left;
+	margin-right:10px;
+	width: 32%;
+}
+.grid_5{
+	float:left;
+	margin-right:10px;
+	width: 32%;
+}
+.grid_6{
+	float:left;
+	margin-right:0px;
+	width: 31%;
+}
+.date_btn {
+    margin: 1em auto;
+    text-align: center;
+    padding-top: 1em;
+}
+.date_btn input[type="submit"] {
+        outline: none;
+    background: #f67d08;
+    font-size: 17px;
+    color: #fff;
+    padding: 10px 1em;
+    border: none;
+    font-family: 'ABeeZee', sans-serif;
+    width: 23%;
+	cursor:pointer;
+    text-align: center;
+		transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+}
+.date_btn input[type="submit"]:hover,li.span1_of_3 a:hover{
+	background:#2569A5;
+	text-decoration:none;
+}
+.reservation h4{
+    font-size: 1.5em;
+    color: #fff;
+    margin: 1em 0;
+    text-align:center;
+	font-weight:400;
+	  font-family: 'ABeeZee', sans-serif;
+}
+div#ui-datepicker-div {
+    top: 350px!important;
+}
+.reservation-buttons {
+       margin: 2em auto 1em;
+    text-align: center;
+}
+/*---------------*/
+span.menu{
+	display:none;
+}
+.navigation {
+text-align: center;
+}
+.navigation {
+     text-align: center;
+    position: absolute;
+    right: 7%;
+    top: -20%;
+}
+ul.navig{
+	padding:0;
+}
+ul.navig li{
+	display: inline-block;
+    margin-right: 26px;
+    cursor: pointer;
+    background: none;
+}
+ul.navig li a {
+	padding:0;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #fff;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	font-family: 'ABeeZee', sans-serif;
+}
+ul.navig li:hover, ul li.active, p.active ,ul.navig p:hover{
+    color: #f67d08;
+}
+ul.navig li p{
+	font-size:0.8em;
+	margin:0;
+}
+ul.navig li a i.bag {
+    background-position: -10px 2px;
+}
+ul.navig li a i {
+    width: 32px;
+    height: 32px;
+    background: url(../images/icons.png)no-repeat;
+    display: inline-block;
+}
+ul.navig li a i.settings{
+	        background-position: -179px 2px;
+}
+ul.navig li a i.gallery{
+	    background-position: -94px 5px;
+}
+ul.navig li a i.message{
+	       background-position: -250px 3px;
+}
+ul.navig li a i.send{
+	        background-position: -327px 5px;
+}
+ul.navig li a i.vac{
+	        background-position: -435px 5px;
+}
+/*---------------*/
+.copy-right {
+  text-align: center;
+  margin: 2em 0;
+}
+.copy-right p {
+	  color: #fff;
+	font-size:1em;
+	font-weight:400;
+}
+.copy-right p a {
+	  color:#fff;
+}
+.copy-right p a:hover {
+	text-decoration: underline;
+}
+/*--meadia quries start here--*/
+@media(max-width:1600px){
+	
+	#select-5 {
+    background: url(../images/arrow1.png) no-repeat 93% center #ffffff;
+	}
+}
+@media(max-width:1440px){
+	.main {
+		width: 50%;
+		margin: 0 auto 1em;
+	}
+}
+@media(max-width:1366px){
+	li.span1_of_1 {
+		float: left;
+		width: 44%;
+	}
+	div#ui-datepicker-div {
+		top: 59%!important;
+	}
+	#select-6 {
+    background: url(../images/arrow1.png) no-repeat 93% center #ffffff;
+    width: 98%;
+	}
+}
+@media(max-width:1280px){
+	.book_date input[type="text"] {
+    width: 68% !important;
+	}
+}
+@media(max-width:1024px){
+	.main {
+    width: 64%;
+    margin: 0 auto 1em;
+}
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 1%;
+		top: -20%;
+	}
+	.book_date input[type="text"] {
+    width: 68% !important;
+	}
+}
+@media(max-width:991px){
+	.main {
+		width: 68%;
+		margin: 0 auto 1em;
+	}
+}
+@media (max-width:800px){
+	.main {
+		width: 79%;
+		margin: 0 auto 1em;
+	}
+		.copy-right {
+		text-align: center;
+		margin: 2em 0 12em 0em;
+	}
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 17%;
+		top: -20%;
+	}
+	div#ui-datepicker-div {
+		top: 59%!important;
+		left: 19%!important;
+	}
+	.ui-datepicker {
+		width: 28.7%!important;
+	}
+	li.span1_of_1.left {
+		margin-left: 2.5em;
+	}
+	.book_date input[type="text"] {
+		width: 74% !important;
+	}
+	body h1 {
+      font-size: 2.8em;
+	}
+	.navigation {
+    text-align: center;
+    position: absolute;
+    right: 17%;
+    top: -13%;
+}
+}
+@media (max-width:736px){
+.navigation {
+    text-align: center;
+    position: absolute;
+    right: 17%;
+    top: -13%;
+}
+}
+@media(max-width:667px){
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 12%;
+		top: -13%;
+	}
+	.grid_4 {
+		float: left;
+		margin-right: 10px;
+		width: 31%;
+	}
+}
+@media(max-width:640px){
+	.book_date input[type="text"] {
+		width: 74% !important;
+		padding: 4px 44px 4px 20px;
+	}
+}
+@media(max-width:600px){
+	ul.navig li {
+		display: inline-block;
+		margin-right: 12px;
+		cursor: pointer;
+		background: none;
+	}
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 10%;
+		top: -11%;
+	}
+	body h1 {
+		text-align: center;
+		font-size: 3.2em;
+		margin: 2em 0em 1em 0em;
+		}
+		li.span1_of_1 {
+		float: left;
+		width: 98.3%;
+	}
+	.grid_4 {
+		float: left;
+		margin-right: 10px;
+		width: 100%;
+	}
+	select {
+		border: none;
+		outline: none;
+		font-size: 13px;
+		color: #777;
+		background: url(../images/arrow1.png) no-repeat 95% center #ffffff;
+		width: 100%;
+		}
+		li.span1_of_1.left {
+		margin-left: 0;
+	}
+	div#ui-datepicker-div {
+		top: 54%!important;
+	}
+	.book_date span.glyphicon-calendar {
+		left: 26.5em;
+		top: 2.5em;
+		z-index: 99;
+	}
+	.grid_5 {
+		float: left;
+		margin-right: 10px;
+		width: 50%;
+	}
+	.grid_6 {
+		float: left;
+		margin-right: 0px;
+		width: 46%;
+	}
+	.reservation-buttons ul li {
+		display: block;
+		list-style: none;
+		margin: 1em 0;
+	}
+	.facts {
+		border: none;
+		padding: 2em 3em;
+	}
+	#select-4 {
+		border: none;
+		outline: none;
+		font-size: 13px;
+		color: #777;
+		background: url(../images/arrow1.png) no-repeat 94% center #ffffff;
+		}
+		.navigation {
+		text-align: center;
+		position: absolute;
+		right: 16%;
+		top: -8%;
+	}
+}
+@media(max-width:568px){
+	ul.navig li {
+		display: inline-block;
+		margin-right: 12px;
+		cursor: pointer;
+		background: none;
+	}
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 18%;
+		top: -8%;
+	}
+	.date_btn input[type="submit"] {
+		font-size: 17px;
+		padding:8px 1em;
+		width: 42%;
+	}
+	.copy-right {
+		text-align: center;
+		margin: 2em 0 2em 0em;
+	}
+}
+@media(max-width:480px){
+	.navigation {
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    top: -11%;
+	}
+	body h1 {
+		font-size: 3.2em;
+		margin: 2em 0em 1em 0em;
+		}
+		li.span1_of_1 {
+		float: left;
+		width: 98.3%;
+	}
+	.grid_4 {
+		float: left;
+		margin-right: 10px;
+		width: 100%;
+	}
+	select {
+		border: none;
+		outline: none;
+		font-size: 13px;
+		color: #777;
+		background: url(../images/arrow1.png) no-repeat 95% center #ffffff;
+		width: 100%;
+		}
+		li.span1_of_1.left {
+		margin-left: 0;
+	}
+	div#ui-datepicker-div {
+		top: 54%!important;
+	}
+	.grid_5 {
+		float: left;
+		margin-right: 10px;
+		width: 50%;
+	}
+	.grid_6 {
+		float: left;
+		margin-right: 0px;
+		width: 46%;
+	}
+	.reservation-buttons ul li {
+		display: block;
+		list-style: none;
+		margin: 1em 0;
+	}
+	.facts {
+		border: none;
+		padding: 2em 3em;
+	}
+	#select-4 {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #777;
+    background: url(../images/arrow1.png) no-repeat 94% center #ffffff;
+	}
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 10%;
+		top: -8%;
+	}
+	.reservation h4 {
+		font-size: 1.4em;
+	}
+}
+@media(max-width:414px){
+	.grid_5 {
+		float: left;
+		margin-right: 0;
+		width: 100%;
+	}
+	.grid_6 {
+		float: left;
+		margin-right: 0px;
+		width: 100%;
+	}
+	.facts {
+		border: none;
+		padding: 1em 2em;
+	}
+	.book_date span.glyphicon-calendar {
+		left: 17.5em;
+		top: 2.5em;
+		z-index: 99;
+	}
+	#select-5 {
+		border: none;
+		outline: none;
+		font-size: 13px;
+		color: #777;
+		background: url(../images/arrow1.png) no-repeat 94% center #ffffff;
+		width: 100%;
+	}
+	#select-6 {
+		border: none;
+		outline: none;
+		font-size: 13px;
+		color: #777;
+		background: url(../images/arrow1.png) no-repeat 94% center #ffffff;
+		width: 100%;
+	}
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right:4%;
+		top: -6%;
+	}
+	.reservation h4 {
+      font-size: 1.3em;
+	}
+	body h1 {
+		font-size: 2.5em;
+		margin: 3em 0em 1em 0em;
+	}
+	ul.navig li p {
+     font-size: 0.7em;
+	}
+}
+@media(max-width:384px){
+	body h1 {
+		font-size: 2.54em;
+		margin: 3em 0em 1em 0em;
+	}
+	ul.navig li {
+		display: inline-block;
+		margin-right: 3px;
+		cursor: pointer;
+		background: none;
+	}
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 7%;
+		top: -6%;
+	}
+	.date_btn input[type="submit"] {
+    padding: 7px 1em;
+    width: 47%;
+	}
+}
+@media(max-width:375px){
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 10%;
+		top: -6%;
+	}
+	body h1 {
+		font-size: 2em;
+		margin: 4em 0em 0.5em 0em;
+	}
+	.reservation h4 {
+		font-size: 1.2em;
+	}
+		.main {
+		width: 96%;
+		margin: 0 auto 1em;
+	}
+	.navigation {
+		text-align: center;
+		position: absolute;
+		right: 14%;
+		top: -6%;
+	}
+	ul.navig li {
+		display: inline-block;
+		margin-right: 0px;
+		cursor: pointer;
+		background: none;
+	}
+	ul.navig li p {
+		font-size: 0.75em;
+		margin: 0;
+	}
+	div#ui-datepicker-div {
+		top: 45%!important;
+	}
+	.reservation h5 {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 0.5em 0 0.5em 0;
+	}
+	.book_date input[type="text"] {
+		width: 77.5% !important;
+	}
+	ul.navig li a {
+    font-size: 1em;
+	}
+}
+@media(max-width:320px){
+	.main {
+		width: 96%;
+		margin: 0 auto 1em;
+	}
+		.navigation {
+		text-align: center;
+		position: absolute;
+		right: 7%;
+		top: -7%;
+	}
+	.book_date input[type="text"] {
+		width: 73.5% !important;
+	}
+	body h1 {
+		font-size: 2em;
+		margin: 3em 0em 0.5em 0em;
+	}
+	ul.navig li {
+		display: inline-block;
+		margin-right: 0px;
+		cursor: pointer;
+		background: none;
+	}
+	ul.navig li p {
+		font-size: 0.75em;
+		margin: 0;
+	}
+	.book_date span.glyphicon-calendar {
+    left: 14.5em;
+    top: 2.5em;
+    z-index: 99;
+	}
+	div#ui-datepicker-div {
+		top: 45%!important;
+	}
+	.copy-right p {
+		font-size: 0.9em;
+		line-height: 1.9em;
+	}
+}
